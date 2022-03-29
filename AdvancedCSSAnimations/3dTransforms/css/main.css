@@ -1,0 +1,41 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  -webkit-perspective: 70rem;
+          perspective: 70rem;
+}
+
+.translate3d {
+  background-color: yellowgreen;
+  height: 10rem;
+  width: 10rem;
+  -webkit-transition: -webkit-transform 2s;
+  transition: -webkit-transform 2s;
+  transition: transform 2s;
+  transition: transform 2s, -webkit-transform 2s;
+  display: inline-block;
+}
+
+.translate3d:hover {
+  -webkit-transform: translateZ(10rem);
+          transform: translateZ(10rem);
+}
+
+.rotate3d {
+  background-color: greenyellow;
+  height: 10rem;
+  width: 10rem;
+  display: inline-block;
+  -webkit-transition: -webkit-transform 2s;
+  transition: -webkit-transform 2s;
+  transition: transform 2s;
+  transition: transform 2s, -webkit-transform 2s;
+}
+
+.rotate3d:hover {
+  -webkit-transform: rotateX(-120deg) rotateY(200deg) rotateZ(20deg);
+          transform: rotateX(-120deg) rotateY(200deg) rotateZ(20deg);
+}
+/*# sourceMappingURL=main.css.map */

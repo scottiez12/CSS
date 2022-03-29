@@ -1,0 +1,28 @@
+//this doesnt necessarily need to be the body element, just whatever the container element is
+body {
+  perspective: 70rem;
+}
+
+.translate3d {
+  background-color: yellowgreen;
+  height: 10rem;
+  width: 10rem;
+  transition: transform 2s;
+  display: inline-block;
+
+  &:hover {
+    transform: translateZ(10rem);
+  }
+}
+
+.rotate3d {
+  background-color: greenyellow;
+  height: 10rem;
+  width: 10rem;
+  display: inline-block;
+
+  transition: transform 2s;
+  &:hover {
+    transform: rotateX(-120deg) rotateY(200deg) rotateZ(20deg);
+  }
+}
