@@ -191,3 +191,31 @@
     content: "transforms";
   }
 }
+
+//animate image pattern
+.animation__container-image-pattern-1 {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60rem;
+  width: 75vw;
+}
+
+.image-pattern-1 {
+  height: 100%;
+  width: 100%;
+  background: url(../img/bg2.png);
+  background-position: 0 0;
+  //animation: image-pattern-1 15s linear infinite;
+}
+
+@keyframes image-pattern-1 {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    //background-position: 0 60rem;
+    background-position: 80rem 0rem;
+  }
+}
